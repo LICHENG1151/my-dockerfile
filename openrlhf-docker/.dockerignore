@@ -1,0 +1,9 @@
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints
+.env
+.cache/
+.git/
+
