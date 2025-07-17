@@ -66,8 +66,8 @@ RUN mkdir -p ~/.config/code-server && \
 auth: none\n\
 cert: false' > ~/.config/code-server/config.yaml
 
-# === 安装vscode extension ===
-RUN code-server --install-extension ms-python.python
+# # === 安装vscode extension ===
+# RUN code-server --install-extension <extension-id> # Need to add the extension id
 
 # === 安装 OpenRLHF（按需）===
 RUN pip uninstall -y xgboost transformer_engine flash_attn pynvml || true && \
